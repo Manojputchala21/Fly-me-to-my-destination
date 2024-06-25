@@ -1,0 +1,31 @@
+This problem can be solved using Brute force method/greedy alogorithm.
+
+I have used Solution #1 to address this problem.
+
+Solution #1 (Finding the maximum distance a plane can be travelled):
+
+This alogorithm involves finding the maximum possible distance a plane can be travelled and checking if the other plane can break this record.
+
+Step1 : Start from initial value and check the maximum distance the plane can be travelled considering the fuel.
+Step2 : Keep track of thi maximum value.
+Step3 : Iterate over the remaining values and check if any plane can break the highest record.
+Step4 : If a plane breaks the records, then replace the maximum value with the latest value and increment the counter of number of planes taken.
+Step5 : Repeat the above process till you reach the end of the list.
+
+-------------------------------------------------------------------------------------------------------
+Solution #2 (Brute Force and Back tracking):
+
+In Brute force method the given list of planes will be traversed recursively.
+Lets take the sample values [3,2,0,1]
+Step1 : Start from initial value and check for the least distance the plane can be travelled considering the fuel.
+3 -> 2 
+Step2 : From this point find the least distance the plane can be travelled considering the fuel.
+2 ->0
+Step3 : From this point it is impossible to go further with given fuel. So traverse back to 2.
+2 <-0
+Step4 : Repeat above steps recursively until you find the least number of planes required to travel to the last aiport
+
+Above alogorithm can be optimized using "Memoization" by keeping track/storing the result of the possiblities of travelling from a given point instead of recalculating them again.
+
+
+
