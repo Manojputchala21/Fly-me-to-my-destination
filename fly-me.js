@@ -37,4 +37,4 @@ function findLeastPlanesToBeTaken(planes) {
 }
 
 let planes = [2,1,2,3,1];
-console.log(findLeastPlanesToBeTaken(planes));
+console.log( "Least number of planes required to change : "+ findLeastPlanesToBeTaken(planes));
