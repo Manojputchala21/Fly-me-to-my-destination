@@ -14,16 +14,20 @@ function findLeastPlanesToBeTaken(planes) {
 
     for (let currentPlane = 0; currentPlane < planes.length; currentPlane++) {
         let fuel = planes[currentPlane];
+        // find the maximum distance the plane can cover
         let distanceCanBeCovered = currentPlane + fuel;
-        
+        // Store the longest of the distance the planes covered
         maxDistanceCanBeCovered = Math.max(maxDistanceCanBeCovered, distanceCanBeCovered);
 
+        //Point to the latest airport if the planes record is broken
         if (currentPlane >= currentPosition) {
             if (currentPosition >= planes.length - 1) {
                 return numberOfPlanesTaken;
             }
+            // increment the numbers of planes taken
             numberOfPlanesTaken++;
             currentPosition = maxDistanceCanBeCovered;
+            // return -1 if the plane cannot travel further
             if (currentPosition <= currentPlane) {
                 return -1;
             }
