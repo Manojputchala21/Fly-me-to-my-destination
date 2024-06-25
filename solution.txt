@@ -1,4 +1,4 @@
-This problem can be solved using Brute force method/greedy alogorithm.
+This problem can be solved using Brute force method/greedy algorithm.
 
 I have used Solution #1 to address this problem.
 
