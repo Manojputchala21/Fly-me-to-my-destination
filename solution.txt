@@ -6,8 +6,8 @@ Solution #1 (Finding the maximum distance a plane can be travelled):
 
 This algorithm involves finding the maximum possible distance a plane can be travelled and checking if the other plane can break this record.
 
-Step1 : Start from initial value and check the maximum distance the plane can be travelled considering the fuel.
-Step2 : Keep track of thi maximum value.
+Step1 : Start from initial value and check the maximum distance the plane can travel considering the fuel.
+Step2 : Keep track of this maximum value.
 Step3 : Iterate over the remaining values and check if any plane can break the highest record.
 Step4 : If a plane breaks the records, then replace the maximum value with the latest value and increment the counter of number of planes taken.
 Step5 : Repeat the above process till you reach the end of the list.
