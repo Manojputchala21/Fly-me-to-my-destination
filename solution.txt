@@ -4,7 +4,7 @@ I have used Solution #1 to address this problem.
 
 Solution #1 (Finding the maximum distance a plane can be travelled):
 
-This alogorithm involves finding the maximum possible distance a plane can be travelled and checking if the other plane can break this record.
+This algorithm involves finding the maximum possible distance a plane can be travelled and checking if the other plane can break this record.
 
 Step1 : Start from initial value and check the maximum distance the plane can be travelled considering the fuel.
 Step2 : Keep track of thi maximum value.
